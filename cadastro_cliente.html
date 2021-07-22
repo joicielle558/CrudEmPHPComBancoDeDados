@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cadastrar Cliente</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Cadastrar Cliente:</h1>
+    <form action="cadastro_cliente.php" method="post">
+        <input type="text" name="nome" placeholder="Nome"><br>
+        <input type="text" name="cpf" placeholder="CPF"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <input type="text" name="nome_produto" placeholder="Nome do Produto"><br>
+        <input type="number" name="quantidade" placeholder="Quantidade do Produto"><br>
+        <input type="text" name="valor_unitario" placeholder="Valor Unitário">
+
+        <div>
+            <hr>
+            <h1>Forma de Pagamento:</h1>
+            <label for="forma_pagamento">Dinheiro</label>
+            <input type="radio" name="forma_pagamento" value="dinheiro">
+            <label for="forma_pagamento">Cartão</label>
+            <input type="radio" name="forma_pagamento" value="cartao">
+            <hr>
+        </div>
+    
+
+        <input type="submit" value="Cadastrar">
+        <input type="reset" value="Cancelar"><br><br>
+    </form>
+
+    <a href="consultar_cliente.html">Consultar Clientes.</a>
+</body>
+</html>
